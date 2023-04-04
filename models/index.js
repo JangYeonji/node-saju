@@ -21,14 +21,14 @@ db.MemberManse = MemberManse;
 db.Group = Group;
 db.GroupMember = GroupMember;
 
-Manse.init(sequelize);
+Manse.init(sequelize);              //모델 초기화
 User.init(sequelize);
 Member.init(sequelize);
 MemberManse.init(sequelize);
 Group.init(sequelize);
 GroupMember.init(sequelize);
 
-User.associate(db);
+User.associate(db);                 //모델 간의 관계 설정
 Member.associate(db);
 MemberManse.associate(db);
 Group.associate(db);
